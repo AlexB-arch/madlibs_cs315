@@ -1,0 +1,32 @@
+<resources>
+    <!-- Component Labels -->
+    <string name="app_name">Mad Libs CS315</string>
+    <string name="message_button_label">Submit</string>
+    <string name="message_textbox_hint">Enter a message</string>
+
+    <!-- Input Hints -->
+    <string name="hint_verb">Verb</string>
+    <string name="hint_verb_ing">Verb ending in \'ing\'</string>
+    <string name="hint_noun">Noun</string>
+    <string name="hint_plural_noun">Plural Noun</string>
+    <string name="hint_adjective">Adjective</string>
+    <string name="hint_adverb">Adverb</string>
+    <string name="hint_animal">Animal</string>
+    <string name="hint_country">Country</string>
+    <string name="hint_food_plural">Food (Plural)</string>
+    <string name="hint_body_part_plural">Part of the Body (Plural)</string>
+    <string name="hint_vehicle">Vehicle</string>
+    <string name="hint_something_alive_plural">Something Alive (Plural)</string>
+
+    <!-- Stories -->
+    <string name="story_title_bears">Bears</string>
+    <string name="story_content_bears">If you go to some %1$s place like Yellowstone National %2$s, you
+        most know how to deal with the wild animals such as bears and wolves and %3$s. The most
+        of these is the bear. There are three kinds of bears, the grizzly bear, the %4$s bear, and
+        the %5$s bear. Bears spend most of their time %6$s or %7$s. They look very %8$s, but if you
+        make them %9$s, they might bite your %10$s. Bears will come up to your car and beg for %11$s.
+        They will stand on their hind legs and clap their %12$s together and pretend to be %13$s.
+        But do not get out of your %14$s or offer the bears %15$s or %16$s. The same advice applies
+        to other wild creatures such as %17$s and %18$s. Remember all these rules and you will spend
+        your vacation %19$s and not get eaten by a/an %20$s.</string>
+</resources>
