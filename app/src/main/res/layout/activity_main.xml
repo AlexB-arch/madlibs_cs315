@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:textAlignment="center"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -33,7 +34,7 @@
                 android:layout_marginEnd="24dp"
                 android:allowUndo="true"
                 android:ems="10"
-                android:hint="@string/message_textbox_hint"
+                android:hint="@string/hint_adjective"
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
                 android:textAlignment="center"
@@ -51,7 +52,9 @@
                 android:layout_marginEnd="24dp"
                 android:allowUndo="true"
                 android:autofillHints=""
+                android:hint="@string/hint_noun"
                 android:inputType="textPersonName"
+                android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/user_input_textbox_1" />
@@ -65,8 +68,10 @@
                 android:layout_marginEnd="24dp"
                 android:allowUndo="true"
                 android:ems="10"
+                android:hint="@string/hint_plural_noun"
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
+                android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/user_input_textbox_2" />
@@ -80,8 +85,10 @@
                 android:layout_marginEnd="24dp"
                 android:allowUndo="true"
                 android:ems="10"
+                android:hint="@string/hint_adjective"
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
+                android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/user_input_textbox_3" />
@@ -95,8 +102,10 @@
                 android:layout_marginEnd="24dp"
                 android:allowUndo="true"
                 android:ems="10"
+                android:hint="@string/hint_adjective"
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
+                android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/user_input_textbox_4" />
@@ -110,8 +119,10 @@
                 android:layout_marginEnd="24dp"
                 android:allowUndo="true"
                 android:ems="10"
+                android:hint="@string/hint_verb_ing"
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
+                android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/user_input_textbox_5" />
@@ -125,9 +136,11 @@
                 android:layout_marginEnd="24dp"
                 android:allowUndo="true"
                 android:ems="10"
+                android:hint="@string/hint_verb_ing"
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
+                android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/user_input_textbox_6" />
@@ -141,8 +154,10 @@
                 android:layout_marginEnd="24dp"
                 android:allowUndo="true"
                 android:ems="10"
+                android:hint="@string/hint_adjective"
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
+                android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/user_input_textbox_7" />
@@ -169,7 +184,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/madlibs_logo"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/madlibs_logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
