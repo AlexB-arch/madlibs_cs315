@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.sax.Element;
 import android.view.View;
 import android.widget.EditText;
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Unused for now
         EditText[] user_input_text = new EditText[20];
         String[] user_text = new String[20];
     }
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     public void sendMessage(View view){
         Intent intent = new Intent(this, DisplayMessageActivity.class);
 
-        /*Declares user input text boxes 1 through 8.
+        //Declares user input text boxes 1 through 8.
         EditText user_text_input_1 = findViewById(R.id.user_input_textbox_1);
         EditText user_text_input_2 = findViewById(R.id.user_input_textbox_2);
         EditText user_text_input_3 = findViewById(R.id.user_input_textbox_3);
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         String user_text_8 = user_text_input_8.getText().toString();
 
         //Sends text to fill in the blanks in the next activity.
-        intent.putExtra(EXTRA_MESSAGE, user_text_1);
+        /*intent.putExtra(EXTRA_MESSAGE, user_text_1);
         intent.putExtra(EXTRA_MESSAGE, user_text_2);
         intent.putExtra(EXTRA_MESSAGE, user_text_3);
         intent.putExtra(EXTRA_MESSAGE, user_text_4);
@@ -59,11 +61,20 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, user_text_7);
         intent.putExtra(EXTRA_MESSAGE, user_text_8);*/
 
+        //Testing the story
+        String story = getString(R.string.story_content_bears, user_text_1, user_text_2, user_text_3, user_text_4, user_text_5, user_text_6, user_text_7);
+
+        intent.putExtra(EXTRA_MESSAGE, story);
+
         //Starts the activity only if the text boxes are not blank.
-        if ()
+        if ( !user_text_1.isEmpty() && !user_text_2.isEmpty() && !user_text_3.isEmpty() && !user_text_4.isEmpty()
+            && !user_text_5.isEmpty() && !user_text_6.isEmpty() && !user_text_7.isEmpty() && !user_text_8.isEmpty()) {
+
             startActivity(intent);
+        }
     }
 
+    //Unused for now
     public void GetUserInput(){
 
     }

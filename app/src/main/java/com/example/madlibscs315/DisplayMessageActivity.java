@@ -18,8 +18,8 @@ public class DisplayMessageActivity extends AppCompatActivity {
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
         // Capture the layout's TextView and set the string as its text
-        TextView story_blank_1 = findViewById(R.id.story_blank_1);
-        story_blank_1.setText(message);
+        TextView story_body = findViewById(R.id.story_body);
+        story_body.setText(message);
 
     }
 }
