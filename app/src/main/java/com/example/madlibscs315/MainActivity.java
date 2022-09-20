@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, user_text_8);*/
 
         //Testing the story
-        String story = getString(R.string.story_content_bears, user_text_1, user_text_2, user_text_3, user_text_4, user_text_5, user_text_6, user_text_7);
+        String story = getString(R.string.story_content_bears, user_text_1, user_text_2, user_text_3, user_text_4, user_text_5, user_text_6, user_text_7, user_text_8);
 
         intent.putExtra(EXTRA_MESSAGE, story);
 
