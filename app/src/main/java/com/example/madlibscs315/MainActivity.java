@@ -8,11 +8,23 @@ import android.sax.Element;
 import android.view.View;
 import android.widget.EditText;
 
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+
+import java.io.File;
 import java.util.Scanner;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 
 public class MainActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "com.example.madlibscs315.MESSAGE";
+
+    /*DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+    DocumentBuilder db = dbf.newDocumentBuilder();
+    Document document = db.parse(new File("activity_main.xml"));
+    NodeList nodeList = document.getElementsByTagName("TextView");*/
 
     //These arrays will initiate on create.
     EditText[] user_input_text;
@@ -24,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Unused for now
-        EditText[] user_input_text = new EditText[20];
-        String[] user_text = new String[20];
+        //EditText[] user_input_text = new EditText[20];
+        //String[] user_text = new String[20];
     }
 
     public void sendMessage(View view){
